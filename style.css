@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'lato',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top,rgba(253, 253, 253, 0.192),hsla(350, 87%, 51%, 0.13)) , url(1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ================================================================================================================= */
+
+.nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    padding:0 3em;
+    width: 100%;
+    height: 100%;
+}
+.links p {
+    margin: 0 1em ;
+}
+
+.logo{
+    flex: 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row;
+}
+
+.logo i{
+    margin-right: 1em;
+    font-size: 2em;
+    color: rgb(190, 30, 56);
+}
+
+.logo h4{
+    font-family: 'lobster';
+    font-size: 1.5em;
+
+}
+h4::first-letter {
+    font-size: 1.2em;
+}
+
+.links{
+    flex: 6;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    background: hsla(350, 100%, 88%, 0.219);
+}
+
+/* ============================================================== MAIN ================================================================*/
+
+
+
+.main{
+    flex: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+
+.left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    flex: 9;
+    padding: 0 3em;
+
+}
+
+.left h3{
+    font-family: 'lobster';
+    color: rgba(190, 30, 57, 0.63);
+    font-size: 3em;
+    text-shadow: #ccc 1px 0 10px;
+}
+h3:first-child::first-letter{
+    font-size: 1.5em;
+}
+
+.left p{
+    margin: .8em 0;
+    font-style: italic;
+    font-size: 1.4em;
+}
+
+.left button{
+    background: transparent;
+    padding: .3em 1.4em;
+    border-radius: .5em;
+    outline: none;
+    border: none;
+    background: rgba(190, 30, 57, 0.445);
+    font-size: 1.1em;
+}
+
+.right{
+    flex:1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2em;
+    font-size: 2em;
+}
+.right i{
+    margin: 1em .5em ;
+    color:rgba(134, 6, 27, 0.678)
+}
